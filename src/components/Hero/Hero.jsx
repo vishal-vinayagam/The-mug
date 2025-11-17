@@ -4,9 +4,8 @@ const Hero = () => {
   return (
     <section id="home" className="hero">
       <div className="hero-video">
-        <video autoPlay muted loop>
-          <source src="public/cafe-video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
+       <video autoPlay muted loop className="bg-video">
+  <source src="/cafe-video.mp4" type="video/mp4" />
         </video>
         <div className="video-overlay"></div>
       </div>
