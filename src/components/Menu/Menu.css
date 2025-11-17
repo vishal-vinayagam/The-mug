@@ -1,0 +1,88 @@
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.menu-item {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.menu-item-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.menu-item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.menu-item:hover .menu-item-image img {
+  transform: scale(1.05);
+}
+
+.add-to-cart {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #D2691E; /* Chocolate - orange brown */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+.menu-item:hover .add-to-cart {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.add-to-cart:hover {
+  background-color: #8B4513; /* SaddleBrown - dark brown */
+}
+
+.menu-item-info {
+  padding: 20px;
+}
+
+.menu-item-info h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.menu-item-info p {
+  color: #666;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+.menu-item-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-weight: 700;
+  color: #D2691E; /* Chocolate - orange brown */
+  font-size: 1.2rem;
+}

@@ -1,0 +1,99 @@
+.live-cafe {
+  background-color: #f9f5f0;
+}
+
+.live-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.live-preview {
+  height: 400px;
+  background-color: #e6d5c3;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.live-placeholder {
+  text-align: center;
+  color: #8B4513;
+}
+
+.live-placeholder i {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.live-placeholder p {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.live-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #8B4513; /* SaddleBrown - dark brown */
+}
+
+.live-info > p {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.live-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.feature {
+  text-align: center;
+  padding: 20px 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.feature i {
+  font-size: 2rem;
+  color: #D2691E; /* Chocolate - orange brown */
+  margin-bottom: 15px;
+}
+
+.feature h4 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.feature p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.live-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+@media (max-width: 992px) {
+  .live-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .live-preview {
+    height: 300px;
+  }
+  
+  .live-features {
+    grid-template-columns: 1fr;
+  }
+}

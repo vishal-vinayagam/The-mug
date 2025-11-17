@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #8B4513; /* SaddleBrown - dark brown */
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #D2691E; /* Chocolate - orange brown */
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #D2691E; /* Chocolate - orange brown */
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #8B4513; /* SaddleBrown - dark brown */
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #D2691E; /* Chocolate - orange brown */
+  border: 2px solid #D2691E;
+}
+
+.btn-secondary:hover {
+  background-color: #D2691E;
+  color: white;
+}
+
+.nav a, .nav Link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover, .nav Link:hover {
+  color: #D2691E; /* Chocolate - orange brown */
+}
+.profile-page,
+.orders-page,
+.favorites-page,
+.coupons-page,
+.messages-page,
+.cart-page {
+  padding-top: 100px;
+  min-height: 100vh;
+}
+
+/* Loading screen styles */
+.loading-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f9f5f0;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #e0e0e0;
+  border-top: 5px solid #8B4513;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .profile-page,
+  .orders-page,
+  .favorites-page,
+  .coupons-page,
+  .messages-page,
+  .cart-page {
+    padding-top: 80px;
+  }
+}
+
+/* Container consistency */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Page title consistency */
+.page-title {
+  font-size: 2.2rem;
+  color: #421e12;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* Card consistency */
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Button consistency */
+.btn-primary {
+  background: #421e12;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #8B4513;
+}
+
+.btn-secondary {
+  background: white;
+  color: #421e12;
+  border: 1px solid #421e12;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: #f9f5f0;
+}

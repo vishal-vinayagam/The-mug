@@ -1,0 +1,86 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(89, 84, 84, 0.184);
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+  z-index: 1;
+  padding-top: 80px;
+}
+
+.hero-buttons {
+  display: flex;
+  padding-top: 300px;
+  gap: 20px;
+}
+
+.hero-buttons a {
+  text-decoration: none;      /* ✅ removes underline */
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+.hero-buttons .btn-primary {
+  background: #421e12;
+  color: white;
+}
+
+.hero-buttons .btn-primary:hover {
+  background: #8B4513;
+}
+
+.hero-buttons .btn-secondary {
+  background: transparent;
+  color: #333;
+}
+
+.hero-buttons .btn-secondary:hover {
+  background: transparent;
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
