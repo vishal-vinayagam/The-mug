@@ -82,7 +82,7 @@ const Header = () => {
           
           {/* Logo */}
           <Link to="/" className="logo">
-            <img src="public/logo.png" alt="Mug Vibe" />
+            <img src="logo.png" alt="Mug Vibe" />
             <span>The Mug</span>
           </Link>
           
